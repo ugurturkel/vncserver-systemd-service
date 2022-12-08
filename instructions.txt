@@ -1,7 +1,7 @@
-1. Install Tight VNC Server "sudo apt install tightvncserver"
-2. Install xfce4 desktop environment "sudo apt install xfce4 xfce4-goodies"
-3. Put the tightvnc.sh to /opt/ folder
+1. Install a VNC Server (tightvncserver, tigervncserver, vnc4server etc.)
+2. Set password with vncpasswd
+3. Install xfce4 desktop environment "sudo apt install xfce4 xfce4-goodies"
 4. Put xstartup file to ~/.vnc/
-5. Put the service in /etc/systemd/system
-6. start the service with "systemctl start tightvncsv.service"
-7. make it persist after reboot "systemctl enable tightvncsv.service"
+5. Put the service file in /etc/systemd/system/
+6. start the service with "systemctl start vncserver@1.service"
+7. make it persist after reboot "systemctl enable vncserver@1.service"

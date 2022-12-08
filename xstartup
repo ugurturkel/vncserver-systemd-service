@@ -1,3 +1,4 @@
 xrdb $HOME/.Xresources
-
+autocutsel -fork
+vncconfig &
 startxfce4 &
